@@ -49,36 +49,12 @@ namespace KeepSavvy.MVVM.ViewModel
             CurrentView = HomeVM;
 
             // change betwen views
-
-            HomeViewCommand = new RelayCommand(o =>
-            {
-                CurrentView = HomeVM;
-            });
-
-            AddViewCommand = new RelayCommand(o =>
-            {
-                CurrentView = AddVM;
-            });
-
-            DispatchViewCommand = new RelayCommand(o =>
-            {
-                CurrentView = DispatchVM;
-            });
-
-            ModifyViewCommand = new RelayCommand(o =>
-            {
-                CurrentView = ModifyVM;
-            });
-
-            RemoveViewCommand = new RelayCommand(o =>
-            {
-                CurrentView = RemoveVM;
-            });
-
-            ReturnViewCommand = new RelayCommand(o =>
-            {
-                CurrentView = ReturnVM;
-            });
+            HomeViewCommand = new RelayCommand(o => {CurrentView = HomeVM;});
+            AddViewCommand = new RelayCommand(o => {CurrentView = AddVM;});
+            DispatchViewCommand = new RelayCommand(o => {CurrentView = DispatchVM;});
+            ModifyViewCommand = new RelayCommand(o => {CurrentView = ModifyVM;});
+            RemoveViewCommand = new RelayCommand(o => {CurrentView = RemoveVM;});
+            ReturnViewCommand = new RelayCommand(o => {CurrentView = ReturnVM;});
 
 
         }

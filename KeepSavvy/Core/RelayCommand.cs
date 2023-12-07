@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace KeepSavvy.Core
 {
-    class RelayCommand
+    class RelayCommand : ICommand
     {
         private Action<object> _execute;
         private Func<object, bool> _canExecute;
